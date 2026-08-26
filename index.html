@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMP Islam Al Azhar 48 Samarinda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="logo">
+        <img src="assets/logo.png" alt="SMP Islam Al Azhar 48 Logo" onerror="this.style.display='none'">
+        <span>SMP Islam Al Azhar 48</span>
+      </div>
+
+      <nav class="nav-links" id="navLinks">
+        <div class="nav-item">
+          <a href="academics.html" data-page="academics.html">Academics
+            <svg class="nav-caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="curriculum.html" data-page="curriculum.html">Curriculum</a>
+            <a href="learning-programs.html" data-page="learning-programs.html">Learning Programs</a>
+            <a href="subjects.html" data-page="subjects.html">Subjects</a>
+            <a href="student-activities.html" data-page="student-activities.html">Student Activities</a>
+            <a href="academic-calendar.html" data-page="academic-calendar.html">Academic Calendar</a>
+            <a href="achievements.html" data-page="achievements.html">Achievements</a>
+          </div>
+        </div>
+
+        <a href="facilities.html" data-page="facilities.html">Facilities</a>
+
+        <div class="nav-item">
+          <a href="about.html" data-page="about.html">About
+            <svg class="nav-caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="school-profile.html" data-page="school-profile.html">School Profile</a>
+            <a href="vision-mission.html" data-page="vision-mission.html">Vision &amp; Mission</a>
+            <a href="teacher-staff.html" data-page="teacher-staff.html">Teacher &amp; Staff</a>
+            <a href="accreditation.html" data-page="accreditation.html">Accreditation</a>
+          </div>
+        </div>
+
+        <a href="news.html" data-page="news.html">News</a>
+        <a href="contact.html" data-page="contact.html">Contact</a>
+      </nav>
+
+      <a href="contact.html#enroll" class="btn-primary">Enroll Now</a>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+      <!-- Decorative background blob -->
+      <svg class="hero-blob" viewBox="0 0 600 600" aria-hidden="true">
+        <path fill="currentColor" d="M451,314Q436,378,384,417Q332,456,266,462Q200,468,150,424Q100,380,84,314Q68,248,110,196Q152,144,206,104Q260,64,318,92Q376,120,416,168Q456,216,451,314Z" />
+      </svg>
+
+      <div class="hero-inner">
+        <div class="hero-photo-wrap">
+          <div class="hero-photo">
+            <img src="assets/students.jpg" alt="Students photo" onerror="this.parentElement.classList.add('img-fallback')">
+          </div>
+          <span class="hero-ring" aria-hidden="true"></span>
+        </div>
+
+        <div class="hero-text">
+          <p class="eyebrow eyebrow-light">Welcome</p>
+          <h1>Educating a generation of strong character, real achievement, and global readiness.</h1>
+          <a href="#about" class="btn-ghost">Learn about us &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Floating chip, overlapping into the next section -->
+      <div class="floating-chip">
+        <span>A-Accredited</span>
+        <span class="dot">&middot;</span>
+        <span>Cambridge Curriculum</span>
+        <span class="dot">&middot;</span>
+        <span>Est. 2015</span>
+      </div>
+    </section>
+
+    <!-- ===== VIDEO INTRO ===== -->
+    <section class="video-section reveal">
+      <div class="video-box" id="videoBox">
+        <button class="play-btn" id="playBtn" aria-label="Play school profile video">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+        </button>
+        <p>Watch our school profile</p>
+      </div>
+    </section>
+
+    <!-- ===== POSTER / ANNOUNCEMENT SLIDER ===== -->
+    <section class="poster-section reveal" aria-label="School announcement posters">
+      <div class="poster-slider" id="posterSlider">
+        <div class="poster-track" id="posterTrack">
+          <div class="poster-slide">
+            <img src="assets/poster-1.jpg" alt="School announcement poster 1" onerror="this.parentElement.classList.add('img-fallback')">
+          </div>
+          <div class="poster-slide">
+            <img src="assets/poster-2.jpg" alt="School announcement poster 2" onerror="this.parentElement.classList.add('img-fallback')">
+          </div>
+          <div class="poster-slide">
+            <img src="assets/poster-3.jpg" alt="School announcement poster 3" onerror="this.parentElement.classList.add('img-fallback')">
+          </div>
+        </div>
+
+        <button class="poster-arrow poster-arrow-prev" id="posterPrev" aria-label="Previous poster">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M15 4l-8 8 8 8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="poster-arrow poster-arrow-next" id="posterNext" aria-label="Next poster">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M9 4l8 8-8 8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+        <div class="poster-dots" id="posterDots"></div>
+      </div>
+    </section>
+
+    <!-- ===== PRINCIPAL WELCOME ===== -->
+    <section class="principal reveal">
+      <div class="principal-photo">
+        <img src="assets/kepsek.jpg" alt="Principal photo" onerror="this.parentElement.classList.add('img-fallback')">
+      </div>
+      <div class="principal-quote">
+        <svg class="quote-mark" viewBox="0 0 32 24" aria-hidden="true"><path fill="currentColor" d="M0 24V14.4Q0 7.2 4 3.6Q8 0 14.4 0V4.8Q10.4 4.8 8.4 7.2Q6.4 9.6 6.4 14.4H14.4V24H0ZM17.6 24V14.4Q17.6 7.2 21.6 3.6Q25.6 0 32 0V4.8Q28 4.8 26 7.2Q24 9.6 24 14.4H32V24H17.6Z"/></svg>
+        <p class="eyebrow">A Message From &middot; Our Principal</p>
+        <p class="quote-text">We are committed to shaping students who excel in knowledge, faith, and noble character.</p>
+      </div>
+    </section>
+
+    <!-- ===== ACCREDITATION BADGES ===== -->
+    <section class="badges reveal" aria-label="School accreditation and affiliations">
+      <div class="badge">
+        <div class="badge-icon"><img src="assets/badge-akreditasi.png" alt="" onerror="this.parentElement.classList.add('img-fallback')"></div>
+        <span>A-Accredited</span>
+      </div>
+      <div class="badge">
+        <div class="badge-icon"><img src="assets/badge-alazhar.png" alt="" onerror="this.parentElement.classList.add('img-fallback')"></div>
+        <span>Al-Azhar</span>
+      </div>
+      <div class="badge">
+        <div class="badge-icon"><img src="assets/badge-kemdikbud.png" alt="" onerror="this.parentElement.classList.add('img-fallback')"></div>
+        <span>Ministry of Education</span>
+      </div>
+      <div class="badge">
+        <div class="badge-icon"><img src="assets/badge-cambridge.png" alt="" onerror="this.parentElement.classList.add('img-fallback')"></div>
+        <span>Cambridge</span>
+      </div>
+    </section>
+
+    <!-- ===== VISION & MISSION ===== -->
+    <section class="vision-mission-band" id="about">
+      <div class="vision-mission reveal">
+        <div class="vm-card">
+          <svg class="vm-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2L2 8l10 6 8-4.8V16h2V8L12 2zM4 13.2V17c0 2.2 3.6 4 8 4s8-1.8 8-4v-3.8l-8 4.8-8-4.8z"/></svg>
+          <h2>Our Vision</h2>
+          <p>To become a leading Islamic educational institution that produces intelligent, principled, and globally competitive graduates.</p>
+        </div>
+        <div class="vm-card">
+          <svg class="vm-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm1 15h-2v-2h2zm0-4h-2V7h2z"/></svg>
+          <h2>Our Mission</h2>
+          <p>To deliver high-quality learning, instill strong Islamic values, and nurture the full potential of every student.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXTRACURRICULAR (horizontal scroll) ===== -->
+    <section class="scroll-section reveal" id="academics">
+      <p class="eyebrow">Student Life</p>
+      <h2>Extracurricular Activities</h2>
+      <div class="scroll-track">
+        <div class="scroll-item">
+          <div class="scroll-circle"><img src="assets/ekskul-futsal.jpg" alt="Futsal" onerror="this.parentElement.classList.add('img-fallback')"></div>
+          <span>Futsal</span>
+        </div>
+        <div class="scroll-item">
+          <div class="scroll-circle"><img src="assets/ekskul-pramuka.jpg" alt="Scouts" onerror="this.parentElement.classList.add('img-fallback')"></div>
+          <span>Scouts</span>
+        </div>
+        <div class="scroll-item">
+          <div class="scroll-circle"><img src="assets/ekskul-seni.jpg" alt="Arts" onerror="this.parentElement.classList.add('img-fallback')"></div>
+          <span>Arts</span>
+        </div>
+        <div class="scroll-item">
+          <div class="scroll-circle"><img src="assets/ekskul-tahfiz.jpg" alt="Quran Memorization" onerror="this.parentElement.classList.add('img-fallback')"></div>
+          <span>Tahfiz</span>
+        </div>
+        <div class="scroll-item">
+          <div class="scroll-circle"><img src="assets/ekskul-sains.jpg" alt="Science Club" onerror="this.parentElement.classList.add('img-fallback')"></div>
+          <span>Science</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RELIGIOUS ACTIVITIES (icon grid, distinct from scroll sections) ===== -->
+    <section class="religious-band">
+      <div class="religious reveal" id="religious">
+        <p class="eyebrow eyebrow-gold">Islamic Character Building</p>
+        <h2>Religious Activities</h2>
+        <div class="religious-grid">
+          <div class="religious-card">
+            <div class="religious-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 4h9a3 3 0 013 3v13a3 3 0 00-3-1H4V4zm16 0h-2a3 3 0 00-3 3v12a3 3 0 013-1h2V4z"/></svg></div>
+            <span>Tahfidz</span>
+          </div>
+          <div class="religious-card">
+            <div class="religious-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 21l3.4-1 11.4-11.4a1 1 0 000-1.4l-2-2a1 1 0 00-1.4 0L3 16.6 3 21zm11-14.5l3 3"/></svg></div>
+            <span>Tamyiz</span>
+          </div>
+          <div class="religious-card">
+            <div class="religious-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="10" width="2.4" height="4" fill="currentColor"/><rect x="7.8" y="6" width="2.4" height="12" fill="currentColor"/><rect x="12.6" y="2" width="2.4" height="20" fill="currentColor"/><rect x="17.4" y="6" width="2.4" height="12" fill="currentColor"/><rect x="20" y="10" width="2.4" height="4" fill="currentColor"/></svg></div>
+            <span>Tahsin</span>
+          </div>
+          <div class="religious-card">
+            <div class="religious-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a4 4 0 014 4c0 1.5-.8 2.8-2 3.5V12h4v2H6v-2h4V9.5C8.8 8.8 8 7.5 8 6a4 4 0 014-4zM4 22v-6h2v6H4zm14 0v-6h2v6h-2zM8 22v-8h8v8H8z"/></svg></div>
+            <span>Sholat Wajib</span>
+          </div>
+          <div class="religious-card">
+            <div class="religious-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2l2.9 6.6L22 9.2l-5 4.9L18.2 21 12 17.6 5.8 21 7 14.1 2 9.2l7.1-.6L12 2z"/></svg></div>
+            <span>Sholat Sunnah</span>
+          </div>
+          <div class="religious-card">
+            <div class="religious-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 15.5A8.5 8.5 0 119.5 4a7 7 0 1010.5 11.5z"/></svg></div>
+            <span>Mabit</span>
+          </div>
+          <div class="religious-card">
+            <div class="religious-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 3a2 2 0 00-2 2v1h2V5h11v14H6v-1H4v1a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H6zM4 8h2v2H4V8zm0 4h2v2H4v-2z"/></svg></div>
+            <span>Sirah Nabawiyyah</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FACILITIES (horizontal scroll) ===== -->
+    <section class="scroll-section scroll-section-alt reveal" id="facilities">
+      <p class="eyebrow">Learning Environment</p>
+      <h2>School Facilities</h2>
+      <div class="scroll-track">
+        <div class="scroll-item">
+          <div class="scroll-circle scroll-circle-alt"><img src="assets/fasilitas-lab-ipa.jpg" alt="Science Lab" onerror="this.parentElement.classList.add('img-fallback')"></div>
+          <span>Science Lab</span>
+        </div>
+        <div class="scroll-item">
+          <div class="scroll-circle scroll-circle-alt"><img src="assets/fasilitas-perpustakaan.jpg" alt="Library" onerror="this.parentElement.classList.add('img-fallback')"></div>
+          <span>Library</span>
+        </div>
+        <div class="scroll-item">
+          <div class="scroll-circle scroll-circle-alt"><img src="assets/fasilitas-masjid.jpg" alt="Mosque" onerror="this.parentElement.classList.add('img-fallback')"></div>
+          <span>Mosque</span>
+        </div>
+        <div class="scroll-item">
+          <div class="scroll-circle scroll-circle-alt"><img src="assets/fasilitas-olahraga.jpg" alt="Sports Field" onerror="this.parentElement.classList.add('img-fallback')"></div>
+          <span>Sports Field</span>
+        </div>
+        <div class="scroll-item">
+          <div class="scroll-circle scroll-circle-alt"><img src="assets/fasilitas-komputer.jpg" alt="Computer Lab" onerror="this.parentElement.classList.add('img-fallback')"></div>
+          <span>Computer Lab</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MEET THE TEACHER ===== -->
+    <section class="scroll-section reveal" id="teachers">
+      <p class="eyebrow">Our Educators</p>
+      <h2>Meet the Teacher!</h2>
+      <div class="scroll-track">
+        <div class="scroll-item">
+          <div class="scroll-circle"><img src="assets/teacher-1.jpg" alt="Teacher" onerror="this.parentElement.classList.add('img-fallback')"></div>
+          <span>Mr. Ahmad<br>Mathematics</span>
+        </div>
+        <div class="scroll-item">
+          <div class="scroll-circle"><img src="assets/teacher-2.jpg" alt="Teacher" onerror="this.parentElement.classList.add('img-fallback')"></div>
+          <span>Ms. Siti<br>English</span>
+        </div>
+        <div class="scroll-item">
+          <div class="scroll-circle"><img src="assets/teacher-3.jpg" alt="Teacher" onerror="this.parentElement.classList.add('img-fallback')"></div>
+          <span>Mr. Budi<br>Science</span>
+        </div>
+        <div class="scroll-item">
+          <div class="scroll-circle"><img src="assets/teacher-4.jpg" alt="Teacher" onerror="this.parentElement.classList.add('img-fallback')"></div>
+          <span>Ms. Rani<br>Islamic Studies</span>
+        </div>
+        <div class="scroll-item">
+          <div class="scroll-circle"><img src="assets/teacher-5.jpg" alt="Teacher" onerror="this.parentElement.classList.add('img-fallback')"></div>
+          <span>Mr. Fajar<br>Sports</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats-band">
+      <div class="stats reveal">
+        <div class="stat-card">
+          <p class="stat-number">540+</p>
+          <p class="stat-label">Total Students</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-number">48</p>
+          <p class="stat-label">Active Teachers</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-number">12:1</p>
+          <p class="stat-label">Student–Teacher Ratio</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-number">100%</p>
+          <p class="stat-label">Graduation Rate</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DISTRIBUTION OF GRADUATES ===== -->
+    <section class="graduates reveal" id="graduates">
+      <p class="eyebrow">Where Our Alumni Go</p>
+      <h2>Distribution of Graduates</h2>
+      <div class="graduates-list">
+        <div class="graduate-row">
+          <span class="graduate-name">SMAN 5 Samarinda</span>
+          <div class="graduate-bar"><div class="graduate-bar-fill" style="width: 22%;"></div></div>
+          <span class="graduate-percent">22%</span>
+        </div>
+        <div class="graduate-row">
+          <span class="graduate-name">SMAN 2 Samarinda</span>
+          <div class="graduate-bar"><div class="graduate-bar-fill" style="width: 18%;"></div></div>
+          <span class="graduate-percent">18%</span>
+        </div>
+        <div class="graduate-row">
+          <span class="graduate-name">SMAN 10 Samarinda</span>
+          <div class="graduate-bar"><div class="graduate-bar-fill" style="width: 15%;"></div></div>
+          <span class="graduate-percent">15%</span>
+        </div>
+        <div class="graduate-row">
+          <span class="graduate-name">SMAN 1 Samarinda</span>
+          <div class="graduate-bar"><div class="graduate-bar-fill" style="width: 12%;"></div></div>
+          <span class="graduate-percent">12%</span>
+        </div>
+        <div class="graduate-row">
+          <span class="graduate-name">MAN 2 Samarinda</span>
+          <div class="graduate-bar"><div class="graduate-bar-fill" style="width: 10%;"></div></div>
+          <span class="graduate-percent">10%</span>
+        </div>
+        <div class="graduate-row">
+          <span class="graduate-name">Other Schools</span>
+          <div class="graduate-bar"><div class="graduate-bar-fill" style="width: 23%;"></div></div>
+          <span class="graduate-percent">23%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NEWS & GALLERY ===== -->
+    <section class="news reveal" id="news">
+      <p class="eyebrow">Latest Updates</p>
+      <h2>News &amp; Gallery</h2>
+      <div class="news-grid">
+        <article class="news-card">
+          <div class="news-thumb"><img src="assets/berita-1.jpg" alt="" onerror="this.parentElement.classList.add('img-fallback')"></div>
+          <p class="news-date">August 1, 2026</p>
+          <h3>News headline 1</h3>
+        </article>
+        <article class="news-card">
+          <div class="news-thumb"><img src="assets/berita-2.jpg" alt="" onerror="this.parentElement.classList.add('img-fallback')"></div>
+          <p class="news-date">July 15, 2026</p>
+          <h3>News headline 2</h3>
+        </article>
+        <article class="news-card">
+          <div class="news-thumb"><img src="assets/berita-3.jpg" alt="" onerror="this.parentElement.classList.add('img-fallback')"></div>
+          <p class="news-date">July 2, 2026</p>
+          <h3>News headline 3</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials reveal">
+      <p class="eyebrow">What They Say</p>
+      <h2>Alumni Testimonials</h2>
+      <div class="testimonial-grid">
+        <blockquote>
+          <svg class="quote-mark quote-mark-sm" viewBox="0 0 32 24" aria-hidden="true"><path fill="currentColor" d="M0 24V14.4Q0 7.2 4 3.6Q8 0 14.4 0V4.8Q10.4 4.8 8.4 7.2Q6.4 9.6 6.4 14.4H14.4V24H0ZM17.6 24V14.4Q17.6 7.2 21.6 3.6Q25.6 0 32 0V4.8Q28 4.8 26 7.2Q24 9.6 24 14.4H32V24H17.6Z"/></svg>
+          <p>The teachers were so caring, it really built my confidence.</p>
+          <cite>Alumni, 2023</cite>
+        </blockquote>
+        <blockquote>
+          <svg class="quote-mark quote-mark-sm" viewBox="0 0 32 24" aria-hidden="true"><path fill="currentColor" d="M0 24V14.4Q0 7.2 4 3.6Q8 0 14.4 0V4.8Q10.4 4.8 8.4 7.2Q6.4 9.6 6.4 14.4H14.4V24H0ZM17.6 24V14.4Q17.6 7.2 21.6 3.6Q25.6 0 32 0V4.8Q28 4.8 26 7.2Q24 9.6 24 14.4H32V24H17.6Z"/></svg>
+          <p>Excellent facilities in a genuinely Islamic environment.</p>
+          <cite>Alumni, 2022</cite>
+        </blockquote>
+        <blockquote>
+          <svg class="quote-mark quote-mark-sm" viewBox="0 0 32 24" aria-hidden="true"><path fill="currentColor" d="M0 24V14.4Q0 7.2 4 3.6Q8 0 14.4 0V4.8Q10.4 4.8 8.4 7.2Q6.4 9.6 6.4 14.4H14.4V24H0ZM17.6 24V14.4Q17.6 7.2 21.6 3.6Q25.6 0 32 0V4.8Q28 4.8 26 7.2Q24 9.6 24 14.4H32V24H17.6Z"/></svg>
+          <p>It prepared me really well for high school.</p>
+          <cite>Alumni, 2024</cite>
+        </blockquote>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" id="contact-footer">
+    <svg class="footer-wave" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,32 C300,64 900,0 1200,32 L1200,0 L0,0 Z" fill="currentColor"/>
+    </svg>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <p class="footer-title">SMP Islam Al Azhar 48</p>
+        <p>Jl. Pendidikan No.1, Samarinda</p>
+        <p>info@alazhar48-smd.sch.id</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-title">Quick Links</p>
+        <p><a href="contact.html#enroll">Admissions</a></p>
+        <p><a href="academic-calendar.html">Academic Calendar</a></p>
+        <p><a href="contact.html#enroll">New Student Registration</a></p>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 SMP Islam Al Azhar 48 Samarinda</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
