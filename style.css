@@ -333,6 +333,7 @@ section { padding: 56px 24px; max-width: var(--max-width); margin: 0 auto; posit
 .floating-chip {
   max-width: fit-content;
   margin: -34px auto 0;
+  margin-top: 10px;
   position: relative;
   z-index: 2;
   background: #fff;
